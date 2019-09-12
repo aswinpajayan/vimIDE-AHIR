@@ -4,7 +4,7 @@ NeoVim configurations for AHIR development
 This project configures neovim (nvim) to work better with AHIR development. 
 
 ## Installing dependencies for AHIRv2
-- To start with AHIR development we need to install ghdl with llvm or gcc backend. This is done by running the shell script [install_ghdl_gcc_backend.sh](install_ghdl_gcc_backend.sh). The file was taken in [VHDL Tutorial by ymahajan456](https://github.com/ymahajan456/Tutorials/tree/master/VHDL_Tutorial/Installation). This project is tested in lubuntu 14 on a VM 
+- To start with AHIR development we need to install ghdl with llvm or gcc backend. This is done by running the shell script [install_ghdl_gcc_backend.sh](install_ghdl_gcc_backend.sh). The file was taken from [VHDL Tutorial by ymahajan456](https://github.com/ymahajan456/Tutorials/tree/master/VHDL_Tutorial/Installation). This project is tested in lubuntu 14 on a VM 
   - OS : lubuntu 14 (VM)
   - RAM : 2048 MB
   - Cores : 1
