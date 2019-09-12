@@ -30,7 +30,7 @@ sh install-nvim.sh
 
  Default install location is ~/.local/share/nvim . This project assumes that nvim is installed in default  path 
  
- ## Installing Neovim 
+ ## Configuring Neovim 
  
  - Neovim configuration file is stored at $HOME/.config/nvim/init.vim . You might have to create the directory. ```mkdir -p $HOME/.config/nvim``` . After that copy [init.vim](init.vim) to the folder(or create a hardlink). init.vim can automatically install [vimplug](https://github.com/junegunn/vim-plug). For this you need to have curl command installed. Given below is the snipptet from init.vim which does that 
  
@@ -46,14 +46,14 @@ endif
  - Uses vim's defualt syntax highlighter. 
  - Supports keyword highlighting, code folding (it follows basic language rules from Aa LRM
  - syntax highlighting is provided by the file [syntax/ahir.vim](syntax/ahir.vim). This file needs to kept in ```~/.local/share/nvim/sytax/ahir.vim```
- - files with .aa extension is automatically tagged as filetype=ahir by the file [ftdetect/ahir.vim] . To be kept in ```~/.local/share/nvim/ftdetect/ahir.vim```
+ - files with .aa extension is automatically tagged as filetype=ahir by the file [ftdetect/ahir.vim](ftdetect/ahir.vim) . To be kept in ```~/.local/share/nvim/ftdetect/ahir.vim```
  
 ## Code completion
 
  - Installing Plugins for Neovim. We use the below plugins to ease up the development 
    - sirver/ultisnips
-	 - neomake/neomake
-	 - roxma/nvim-completion-manager
+   - neomake/neomake
+   - roxma/nvim-completion-manager
  These are mentioned in the plug# section of init.vim and can be installed by the command
  
  ```:PlugInstall```
