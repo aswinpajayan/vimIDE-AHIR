@@ -31,4 +31,8 @@ sh install-nvim.sh
  
  ## Configuring Neovim 
  
- - Neovim configuration file is stored at $HOME/.config/nvim/init.vim . You might have to create the directory. ```mkdir -p $HOME/.config/nvim``` . After that copy [init.vim](init.vim) to the folder(or create a hardlink). 
+ - Neovim configuration file is stored at $HOME/.config/nvim/init.vim . You might have to create the directory. ```mkdir -p $HOME/.config/nvim``` . After that copy [init.vim](init.vim) to the folder(or create a hardlink). init.vim can automatically install [vimplug](https://github.com/junegunn/vim-plug). For this you need to have curl command installed. 
+ 
+ https://github.com/aswinpajayan/vimIDE-AHIR/blob/7140396f3671b34ee3d538b39e45fc5506094c30/init.vim#L5-L10
+ 
+ ## 
