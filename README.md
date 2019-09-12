@@ -22,10 +22,11 @@ This project configures neovim (nvim) to work better with AHIR development.
  ## Installing Neovim 
  - Neovim is not packaged with *ubuntu14*. You will have to build neovim from sources . If you dont have any problem with installing python versions, you can use the [script](install-nvim.sh) provided in this project. It just follows the steps mentioned in [Neovim wiki](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source) with some additional fixes for running [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager) .
 
-```chmod 755 install-nvim.sh```
+```
+chmod 755 install-nvim.sh
+sh install-nvim.sh
+```
 
-```sh install-nvim.sh```
- 
  Default install location is ~/.local/share/nvim . This project assumes that nvim is installed in default  path 
  
  ## Configuring Neovim 
