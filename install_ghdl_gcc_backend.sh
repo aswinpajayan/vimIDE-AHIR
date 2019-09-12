@@ -19,3 +19,4 @@ ghdl --version
 
 #echo
 #echo Check if the Installation is successful by running \"ghdl --help\" or \"ghdl --version\"
+sudo apt install git curl -y
