@@ -58,10 +58,10 @@ endif
  
  ```:PlugInstall```
  
- -  Some ready to use code snippets are available in the file [ahir.snippets](UltiSnips/ahir.snippets) . This file should be kept in the path ```$HOME/UltiSnips/ahir.vim``` . Snippets can be edited in nvim using the command ```:UltiSnipsEdit``` . 
+ -  Some ready to use code snippets are available in the file [ahir.snippets](UltiSnips/ahir.snippets) . This file should be kept in the path ```$HOME/UltiSnips/ahir.vim``` . Snippets can be edited in nvim using the command ```:UltiSnipsEdit``` .	
  
  - You can use ctags to enable code completion from tags file 
- - Autocompletion is providided by the nvim-completion-manager plugin
+ - Autocompletion is providided by the nvim-completion-manager plugin : press Tab to expand the available options
  
  
  
