@@ -11,11 +11,11 @@ This project configures neovim (nvim) to work better with AHIR development.
  
  - Latest version of AHIR can be downloaded from [madhavPdesai/ahir](https://github.com/madhavPdesai/ahir/tree/master/v2). 
  
- ``` git clone https://github.com/madhavPdesai/ahir.git ```
- 
- ``` cd ahir/release ```
- 
- ``` source ahir_bashrc```
+ ``` 
+ git clone https://github.com/madhavPdesai/ahir.git
+ cd ahir/release
+ source ahir_bashrc
+ ```
  
  You can start coding in ahir right away . For make files and other docs , refer to [docs](https://github.com/madhavPdesai/ahir/tree/master/release/docs). 
  
