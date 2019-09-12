@@ -1,0 +1,81 @@
+snippet "mod|module|\$mod|\$module" "AHIR module" rb
+$module [${1:<module-name>}] $in($2) $out($3) $is{
+	//code goes here
+	$4
+}
+endsnippet
+
+snippet "pipe|\$pipe" "AHIR pipe" rb
+$pipe ${1:<pipe-name>}: ${2:type=int/float}<$3> $depth ${4:integer} //$4-slot queue
+endsnippet
+
+snippet "lifo|\$lifo" "AHIR pipe" rb
+$lifo $pipe ${1:<pipe-name>}: ${2:type=int/float}<$3> $depth ${4:integer} //$4-slot stack
+endsnippet
+
+snippet "const|\$const|constant\|$constant" "AHIR Constant" rb
+$constant ${1:<constant-name>}: ${2:<constant-type>} := ${3:<initial-value>}
+endsnippet
+
+snippet "call|\$call" "AHIR function call" rb
+$call ${1:<function-name>} (${2:<input s>}) (${3:<output s>})
+endsnippet
+
+snippet "switch|\$switch" "AHIR switch syntax" rb
+$switch ${1:<var>} $when ${2:<condition>} $then ${3:<expr>}
+	$default ${4:<exp/$null>}
+$endswitch
+endsnippet
+
+snippet "if|\$if" "AHIR if syntax" rb
+$if (${1:condition}) $then 
+	${3:<expr>}
+$else
+	${4:<else-expr>}
+$endif
+endsnippet
+
+snippet "dopipeline|\$dopipeline|pipline|\$pipeline" "pipelined loops" rb
+$dopipeline $depth ${1:<depth>} $buffering ${2:<buffering>} $fullrate
+//statements ....
+$3
+$while ${4:<condition>}
+endsnippet
+
+snippet "storage|\$storage" "storage object"
+$storage ${1:<storage-name>}: ${2:<data-type>}
+endsnippet
+
+snippet "array|array" "Ahir Array" r
+$array [${1:<len>}] $of $${2:<type>}
+endsnippet
+
+snippet "\$operator|\$volatile|\$opaque|\$macro|\$foreign" "Module classes" rb
+`!p snip.rv = match.group(0)` $module [${1:<module-name>}] $in($2) $out($3) $is{
+	//code goes here
+	$4
+}
+endsnippet
+
+
+snippet "operator|volatile|opaque|macro|foreign" "Module classes" rb
+$`!p snip.rv = match.group(0)` $module [${1:<module-name>}] $in($2) $out($3) $is{
+	//code goes here
+	$4
+}
+endsnippet
+
+snippet "mux|\$mux" "multiplexer" r
+($mux (${1:<sel-var>}) (${2:<sel>}) (${3:<sel-bar>})
+endsnippet
+	
+snippet "merge|\$merge" "merge statement"
+$merge $entry ${1:<incoming-places>} 
+	${1://add phi statement if required}
+$endmerge
+endsnippet
+
+snippet "phi|\$phi" "phi statement"
+$phi ${1:<var>} := ${2:<expr>} $on ${3:<incoming-place>} ${4:<expr2>} $on ${5:<incoming-place2>}
+endsnippet
+
