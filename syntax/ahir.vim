@@ -1,3 +1,10 @@
+" Vim syntax file 
+" Language:	AHIR
+" Maintainer:	Aswin P Ajayan <aswin@ee.iitb.ac.in>
+" Last Change:	2019 Sep 12
+" Credits:	
+"		
+
 " Quit when a syntax file was already loaded.
 if exists('b:current_syntax') | finish|  endif
 
