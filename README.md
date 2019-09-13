@@ -3,6 +3,8 @@ NeoVim configurations for AHIR development
 
 This project configures neovim (nvim) to work better with AHIR development. 
 
+[intro image]intro.gif
+
 ## Installing dependencies for AHIRv2
 - To start with AHIR development we need to install ghdl with llvm or gcc backend. This is done by running the shell script [install_ghdl_gcc_backend.sh](install_ghdl_gcc_backend.sh). The file was taken from [VHDL Tutorial by ymahajan456](https://github.com/ymahajan456/Tutorials/tree/master/VHDL_Tutorial/Installation). This project is tested in lubuntu 14 on a VM 
   - OS : lubuntu 14 (VM)
@@ -61,7 +63,7 @@ endif
  -  Some ready to use code snippets are available in the file [ahir.snippets](UltiSnips/ahir.snippets) . This file should be kept in the path ```$HOME/UltiSnips/ahir.vim``` . Snippets can be edited in nvim using the command ```:UltiSnipsEdit``` .	
  
  - You can use ctags to enable code completion from tags file 
- - Autocompletion is providided by the nvim-completion-manager plugin : press Tab to expand the available options
+ - Autocompletion is providided by the nvim-completion-manager plugin : press enter to select option , then press Tab to expand the selected
  
  
  
