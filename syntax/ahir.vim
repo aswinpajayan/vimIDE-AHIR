@@ -21,7 +21,7 @@ syntax match ahirNumber		 "^\d\+"
 "currently only mantessa of 52 and 23 are supported in AHIR
 syntax match ahirFloatExponent  ",\zs[52][23]\ze>"
 syntax match ahirFloat    "_f[-+]\=\d.\d\+e+\d\+"
-syn keyword ahirPipelineDesc dopipeline depth buffering fullrate
+syn keyword ahirPipelineDesc dopipeline depth buffering fullrate pipeline
 """ pipe is used as a synchronisation mechanism in AHIR Language
 syn keyword ahirPipeType lifo noblock in out signal
 syn keyword ahirDataType uint uint8  uint_8 float pipe int pointer array  record
