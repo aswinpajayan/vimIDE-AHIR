@@ -47,7 +47,7 @@ endif
 
  - Uses vim's defualt syntax highlighter. 
  - Supports keyword highlighting, code folding (it follows basic language rules from Aa LRM
- - syntax highlighting is provided by the file [syntax/ahir.vim](syntax/ahir.vim). This file needs to kept in ```~/.local/share/nvim/sytax/ahir.vim```
+ - syntax highlighting is provided by the file [syntax/ahir.vim](syntax/ahir.vim). This file needs to kept in ```~/.local/share/nvim/syntax/ahir.vim```
  - files with .aa extension is automatically tagged as filetype=ahir by the file [ftdetect/ahir.vim](ftdetect/ahir.vim) . To be kept in ```~/.local/share/nvim/ftdetect/ahir.vim```
  
 ## Code completion
