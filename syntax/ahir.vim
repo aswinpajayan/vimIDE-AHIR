@@ -38,7 +38,7 @@ syn keyword ahirFlow	 switch when then default endswitch place merge endmerge ph
 syn keyword ahirDefPlaces entry loopback
 """ <res> = ($slice <vector-to-split> <start-index> <stop-index>)
 syn keyword ahirSlice	 contained slice
-syn keyword ahirSync     mark sync delay keep join fork
+syn keyword ahirSync     mark synch delay keep join fork update
 syn keyword ahirModule   module in out is nextgroup=ahirIdentifier
 syn keyword ahirBlocks   branchblock seriesblock parallelblock forkblock
 
