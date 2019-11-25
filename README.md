@@ -2,6 +2,7 @@
 NeoVim configurations for AHIR development
 
 This project configures neovim (nvim) to work better with AHIR development. 
+Project involves custom syntax highlter and completion using UltiSnips
 
 ![intro image](https://github.com/aswinpajayan/vimIDE-AHIR/blob/master/intro.gif)
 
